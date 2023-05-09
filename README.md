@@ -12,9 +12,21 @@ Use these restrictions to learn new things:
 
 ## Usage
 0. <i>[Install Rust](https://www.rust-lang.org/tools/install)</i>
+
+### Automatic
+1. Populate sdk/src/
+```cmd
+./initialize_sdk.sh
+```
+2. Build hook.dll and inject into DRG
+```cmd
+./inject.sh
+```
+
+### Manual
 1. Build the sdk_gen package:
 ```cmd
-echo nul > sdk_gen/src/lib.rs
+echo nul > sdk/src/lib.rs
 cargo build -p sdk_gen
 ```
 2. Run DRG and inject the built target/debug/sdk_gen.dll to populate sdk/src/
