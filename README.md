@@ -32,3 +32,6 @@ cargo build -p sdk_gen
 2. Run DRG and inject the built target/debug/sdk_gen.dll to populate sdk/src/
 3. Now you can build the workspace with `cargo build`
 4. Run DRG and inject target/debug/hook.dll
+
+## Credits
+[nefarius/Injector](https://github.com/nefarius/Injector)
